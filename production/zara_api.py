@@ -80,6 +80,16 @@ async def get_avatar():
         b64 = base64.b64encode(f.read()).decode()
     return JSONResponse({"status": "ok", "image": b64})
 
+
+@app.get("/zara/clips")
+async def get_clips():
+    return JSONResponse({
+        "clips": {
+            "welcome": "/static/zara_clips/welcome.mp4",
+            "expressions": "/static/zara_clips/expressions.mp4"
+        }
+    })
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
