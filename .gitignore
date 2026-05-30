@@ -1,0 +1,20 @@
+# Ignore huge folders and nested repos
+barber_ai/ultralytics/
+barber_ai/3DDFA_V2/
+ai-toolkit/
+models/
+venv*/
+__pycache__/
+train_data/
+training_data/
+SadTalker/
+SimpleTuner/
+flux_env/
+
+# Ignore large files
+*.tar
+*.tar.gz
+*.zip
+*.mp4
+*.jpg
+*.png
